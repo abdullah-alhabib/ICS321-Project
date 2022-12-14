@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #22A39F;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="9.0" layoutY="8.0" prefHeight="27.0" prefWidth="115.0" text="From" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9824561476707458" green="0.9642624855041504" blue="0.9642624855041504" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="10.0" layoutY="84.0" prefHeight="27.0" prefWidth="115.0" text="To" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9824561476707458" green="0.9642624855041504" blue="0.9642624855041504" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <DatePicker layoutX="29.0" layoutY="48.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <ComboBox layoutX="39.0" layoutY="229.0" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <DatePicker layoutX="27.0" layoutY="112.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="9.0" layoutY="177.0" prefHeight="27.0" prefWidth="115.0" text="Catorogical" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9824561476707458" green="0.9642624855041504" blue="0.9642624855041504" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ComboBox layoutX="20.0" layoutY="365.0" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="14.0" layoutY="312.0" prefHeight="27.0" prefWidth="115.0" text="Status" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9824561476707458" green="0.9642624855041504" blue="0.9642624855041504" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ComboBox layoutX="20.0" layoutY="477.0" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <Label layoutX="16.0" layoutY="436.0" prefHeight="27.0" prefWidth="115.0" text="Location" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9824561476707458" green="0.9642624855041504" blue="0.9642624855041504" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="87.0" layoutY="583.0" mnemonicParsing="false" prefWidth="170.0" style="-fx-background-color: #22A39F;" text="Generate" textFill="#ffffff91" AnchorPane.leftAnchor="20.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
