@@ -5,21 +5,50 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class ReportController implements Initializable {
-        @FXML
+    @FXML
+    private TextField LocationField;
+
+    @FXML
+    private Button btn_generate;
+
+    @FXML
+    private TableColumn<Packages, Integer> col_CID;
+
+    @FXML
+    private TableColumn<Packages, String> col_Destination;
+
+    @FXML
+    private TableColumn<Packages, Integer> col_PID;
+
+    @FXML
+    private TableColumn<Packages, Float> col_cost;
+
+    @FXML
+    private TableColumn<Packages, Date> col_deliveryDate;
+
+    @FXML
+    private TableColumn<Packages, String> col_insuranceAmount;
+
+    @FXML
+    private TableColumn<Packages, String> col_status;
+
+    @FXML
+    private TableColumn<Packages, String> col_type;
+
+    @FXML
         private ComboBox<String> dropDownCategories;
 
         @FXML
         private ComboBox<String> dropDownStatus;
-         @FXML
-         private TextField LocationField;
-        @FXML
-        private Button btn_generate;
+
 
 
 

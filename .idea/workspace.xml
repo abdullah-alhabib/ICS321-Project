@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1b40d5-4c15-43c0-b19b-599d4ee79cf4" name="Changes" comment="Report interface completed">
+    <list default="true" id="3b1b40d5-4c15-43c0-b19b-599d4ee79cf4" name="Changes" comment="packages interface completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ics321/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ics321/ReportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ics321/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ics321/app.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ics321/packagesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ics321/packagesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ics321/packages.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ics321/packages.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ics321/Report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ics321/Report.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671055862422</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="packages interface completed">
+      <created>1671057541102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671057541102</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +119,8 @@
     <MESSAGE value="phase1" />
     <MESSAGE value="phase2" />
     <MESSAGE value="Report interface completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Report interface completed" />
+    <MESSAGE value="packages interface completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="packages interface completed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

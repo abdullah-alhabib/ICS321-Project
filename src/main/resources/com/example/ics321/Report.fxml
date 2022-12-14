@@ -4,6 +4,8 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -11,7 +13,6 @@
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ics321.ReportController">
    <left>
@@ -59,9 +60,9 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <DatePicker layoutX="29.0" layoutY="48.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
-            <ComboBox fx:id="dropDownCategories" layoutX="39.0" layoutY="229.0" onAction="#setCategoriesItem" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
-            <DatePicker layoutX="27.0" layoutY="112.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <DatePicker layoutX="29.0" layoutY="48.0" prefWidth="170.0" style="-fx-background-color: #F3EFE0;" AnchorPane.leftAnchor="20.0" />
+            <ComboBox fx:id="dropDownCategories" layoutX="39.0" layoutY="229.0" onAction="#setCategoriesItem" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #F3EFE0;" AnchorPane.leftAnchor="20.0" />
+            <DatePicker layoutX="27.0" layoutY="112.0" prefWidth="170.0" style="-fx-background-color: #F3EFE0;" AnchorPane.leftAnchor="20.0" />
             <Label layoutX="9.0" layoutY="177.0" prefHeight="27.0" prefWidth="115.0" text="category" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="System Bold" size="14.0" />
@@ -83,7 +84,7 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <ComboBox fx:id="dropDownStatus" layoutX="20.0" layoutY="365.0" onAction="#setStatusItem" prefHeight="27.0" prefWidth="170.0" AnchorPane.leftAnchor="20.0" />
+            <ComboBox fx:id="dropDownStatus" layoutX="20.0" layoutY="365.0" onAction="#setStatusItem" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #F3EFE0;" AnchorPane.leftAnchor="20.0" />
             <Label layoutX="14.0" layoutY="312.0" prefHeight="27.0" prefWidth="115.0" text="Status" AnchorPane.leftAnchor="20.0">
                <font>
                   <Font name="System Bold" size="14.0" />
@@ -128,11 +129,33 @@
             </Label>
             <Button fx:id="btn_generate" layoutX="87.0" layoutY="583.0" mnemonicParsing="false" prefWidth="170.0" style="-fx-background-color: #22A39F;" text="Generate" textFill="#ffffff91" AnchorPane.leftAnchor="20.0">
                <font>
-                  <Font name="System Bold" size="17.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <TextField fx:id="LocationField" layoutX="34.0" layoutY="494.0" />
+            <TextField fx:id="LocationField" layoutX="34.0" layoutY="494.0" prefWidth="170.0" style="-fx-background-color: #F3EFE0;" AnchorPane.leftAnchor="20.0" />
          </children>
       </AnchorPane>
    </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3EFE0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="-12.0" layoutY="20.0" prefHeight="26.0" prefWidth="734.0" style="-fx-background-color: #22A39F;" text="Report Generator" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TableView layoutX="22.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3EFE0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+              <columns>
+                <TableColumn fx:id="col_PID" prefWidth="102.88888549804688" style="-fx-background-color: #F3EFE0;" text="Package ID" />
+                <TableColumn fx:id="col_CID" prefWidth="79.11114501953125" style="-fx-background-color: #F3EFE0;" text="Customer ID" />
+                  <TableColumn fx:id="col_type" prefWidth="70.22216796875" style="-fx-background-color: #F3EFE0;" text="Type" />
+                  <TableColumn fx:id="col_Destination" prefWidth="81.11114501953125" style="-fx-background-color: #F3EFE0;" text="Destination" />
+                  <TableColumn fx:id="col_cost" prefWidth="72.2222900390625" style="-fx-background-color: #F3EFE0;" text="Cost" />
+                  <TableColumn fx:id="col_status" prefWidth="97.7777099609375" style="-fx-background-color: #F3EFE0;" text="Status" />
+                  <TableColumn fx:id="col_insuranceAmount" prefWidth="124.888916015625" style="-fx-background-color: #F3EFE0;" text="Insurance Amount" />
+                  <TableColumn fx:id="col_deliveryDate" prefWidth="93.11102294921875" style="-fx-background-color: #F3EFE0;" text="Date" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </center>
 </BorderPane>
