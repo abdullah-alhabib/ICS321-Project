@@ -11,9 +11,9 @@ import java.io.IOException;
 public class app extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(app.class.getResource("login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(app.class.getResource("Report.fxml"));
         stage.initStyle(StageStyle.UNDECORATED);
-        Scene scene = new Scene(fxmlLoader.load(), 960, 540);
+        Scene scene = new Scene(fxmlLoader.load(), 1024, 720);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
