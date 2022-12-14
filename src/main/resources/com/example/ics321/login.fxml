@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.ics321.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ics321.loginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="480.0" style="-fx-background-color: #22A39F;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="46.0" layoutY="142.0" prefHeight="75.0" prefWidth="388.0" text="LOGIN" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+            <Line endX="303.0" layoutX="146.0" layoutY="210.0" startX="-100.0" stroke="#fffafa" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="480.0" style="-fx-background-color: #F3EFE0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="121.0" text="Username" />
+            <Label layoutX="34.0" layoutY="211.0" prefHeight="21.0" prefWidth="59.0" text="Password" />
+            <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="131.0" layoutY="209.0" prefHeight="25.0" prefWidth="212.0" promptText="Password" />
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="131.0" layoutY="117.0" prefHeight="25.0" prefWidth="214.0" promptText="Username" />
+            <Button fx:id="loginButton" layoutX="133.0" layoutY="294.0" mnemonicParsing="false" onAction="#errormassegeOnAction" prefHeight="13.0" prefWidth="209.0" text="Login" textOverrun="WORD_ELLIPSIS" />
+            <Button fx:id="cancelButton" cancelButton="true" layoutX="134.0" layoutY="344.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="13.0" prefWidth="209.0" text="Cancel" />
+            <Label fx:id="errorMassege" alignment="CENTER" layoutX="73.0" layoutY="56.0" prefHeight="35.0" prefWidth="331.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

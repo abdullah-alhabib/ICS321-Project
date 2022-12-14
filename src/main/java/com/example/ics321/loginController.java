@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import  javafx.scene.control.*;
 
 
-public class HelloController {
+public class loginController {
     @FXML
     private Label welcomeText;
     @FXML
