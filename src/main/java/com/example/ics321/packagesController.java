@@ -10,6 +10,13 @@ import java.util.Date;
 
 public class packagesController {
     @FXML
+    private Button btn_add;
+
+    @FXML
+    private Button btn_edit;
+    @FXML
+    private Button btn_remove;
+    @FXML
     private TableColumn<Packages, Integer> col_CID;
 
     @FXML
